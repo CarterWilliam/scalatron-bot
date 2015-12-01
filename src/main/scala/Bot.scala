@@ -1,4 +1,8 @@
 
 class ControlFunctionFactory {
-    def create = (input: String) => "Status(text=I can't Move!)"
+    def create = new Bot respond _
+}
+
+class Bot {
+  def respond(input: String): String = "Status(text=HI)"
 }
