@@ -4,5 +4,7 @@ class ControlFunctionFactory {
 }
 
 class Bot {
-  def respond(input: String): String = "Status(text=HI)"
+  def respond(input: String): String = {
+    "Status(text=Hello!)"
+  }
 }

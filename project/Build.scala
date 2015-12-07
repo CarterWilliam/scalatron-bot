@@ -15,7 +15,10 @@ object Build extends sbt.Build {
     version := "1.0.0",
     scalaVersion := "2.9.1",
 
-    localBotDirectory in Scalatron := "/path/to/your/local/scalatron/bot/directory/Bot"
+    resolvers += "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/",
+    libraryDependencies += "org.specs2" %% "specs2" % "1.9" % "test",
+
+    localBotDirectory in Scalatron := "//Users/cartew01/workspace/Scalatron/bots/Bot"
   )
 
 }
